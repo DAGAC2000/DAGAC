@@ -1,3 +1,5 @@
-document.getElementById('miBoton').addEventListener('click', function() {
-    alert('¡Hola! Has hecho clic en el botón.');
+document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', function() {
+        alert('¡Has hecho clic en un botón!');
+    });
 });
